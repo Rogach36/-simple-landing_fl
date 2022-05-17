@@ -1,0 +1,189 @@
+
+/*обнуляет отсуп и поля, меняет подсчет ширины блока*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*убирает обводку */
+
+:focus, 
+:active {
+    outline: none;
+}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+/*уравнивает поведение шрифтов и элементов для разных браузеров*/
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*наследуют семейство шрифта от родителя, чего нет по умолчанию у них*/
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+/*-----------------------------------------------------------------*/
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e8e8e8;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #273d46;
+    
+    /* font-family: Arial, Helvetica, sans-serif; */    
+    
+}
+
+.wrapper {
+    width: 841px;
+    margin: 0 auto;
+    padding: 0 45px 0 45px;
+}
+
+.main-header {    
+   
+}
+
+.main-header__title,
+.main__list,
+.main__link {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main-header__title { 
+    text-align: center;  
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #273d46;
+    opacity: 0.8;
+   
+    margin: 168 0 28px 0;
+}
+
+.main-header__description {
+    text-align: center;
+    width: 726px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+    margin-bottom: 77px;
+    /* background: url('../img/light_man_copy_26.jpg') no-repeat;
+    padding-bottom: 100px; */
+}
+
+.main {
+    /* background: url('../img/light_man_copy_26.jpg') 47% no-repeat; */
+}
+
+ .main-pic {    
+    background: url('../img/light_man_copy_26.jpg') 50% no-repeat;
+    width: 841px;
+    height: 561px;
+    box-shadow: 0px 15px 65px 0px rgba(15,16,16,0.15);    
+    margin: 0 auto;
+} 
+
+.main__text {
+    margin-bottom: 44px;
+   
+}
+.main__text--1 {
+    margin-top: 77px;
+}
+
+.main__list {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-bottom: 59px;
+}
+
+.list-item {
+    padding-left: 30px;
+    background: url('../img/check_icon_37.png')  0 7px no-repeat;
+}
+
+.list-item--1 {
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+    margin-bottom: 5px;
+}
+
+.list-item--2 {
+    font-style: italic;
+    color: #80b7b3;
+    margin-bottom: 8px;
+}
+
+.list-item--3 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.list-item--4 {
+    text-decoration: line-through;
+}
+
+.main__link {
+    width: 199px;
+    display: inline-block;  
+    border-radius: 20px;    
+    font-size: 14px;
+    padding-left: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    box-shadow: 0px 6px 40px 0px;
+    background: url('../img/icons/shape2.svg') 155px 50% no-repeat;
+    background-color: #80b7b3;
+}
+
+
+.list {
+    margin-bottom: 50px;
+}
+
+.list li {
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: url('../img/light_man_copy_26.jpg') left 2px no-repeat;
+    padding-left: 30px;
+}
+
+.block {       
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    background: url('../img/100.jpg') 0 0 no-repeat, 
+    url('../img/bed-1853907_1920.jpg') 50%/cover no-repeat; 
+    
+}
